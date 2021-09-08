@@ -1,0 +1,145 @@
+<html>
+
+<style type="text/css" scoped>
+    .mauticform_wrapper { max-width: 600px; margin: 10px auto; color: #6f6f6f; font-weight: 400; font-family: 'Source Sans Pro', 'Helvetica Neue', 'Arial', 'sans-serif';font-size: 18px;}
+    .mauticform-innerform {}
+    .mauticform-post-success {}
+    .mauticform-name { font-weight: bold; font-size: 1.5em; margin-bottom: 3px; }
+    .mauticform-description { margin-top: 2px; margin-bottom: 10px; }
+    .mauticform-error { margin-bottom: 10px; color: red; }
+    .mauticform-message { margin-bottom: 10px;color: green; }
+    .mauticform-row { display: block; margin-bottom: 20px; }
+    .mauticform-label { font-size: 1.1em; display: block; font-weight: bold; margin-bottom: 5px; color: #0C618F; }
+    .mauticform-row.mauticform-required .mauticform-label:after { color: #e32; content: " *"; display: inline; }
+    .mauticform-helpmessage { display: block; font-size: 0.9em; margin-bottom: 3px; }
+    .mauticform-errormsg { display: block; color: red; margin-top: 2px; }
+    .mauticform-selectbox, .mauticform-input, .mauticform-textarea { width: 100%; padding: 0.5em 0.5em; border: 0; border-bottom: 1px solid #0C618F; background: #fff; box-sizing: border-box; }
+    .mauticform-checkboxgrp-row {}
+    .mauticform-checkboxgrp-label { font-weight: normal; }
+    .mauticform-checkboxgrp-checkbox {}
+    .mauticform-radiogrp-row {}
+    .mauticform-radiogrp-label { font-weight: normal; }
+    .mauticform-radiogrp-radio {}
+    .mauticform-button-wrapper .mauticform-button.btn-default { color: #0C618F;background-color: #f2f2f2;border-color: #0C618F;}
+    .mauticform-button-wrapper .mauticform-button { display: inline-block;margin-bottom: 0;font-weight: 600;text-align: center;vertical-align: middle;cursor: pointer;background-image: none;border: 1px solid transparent;white-space: nowrap;padding: 6px 12px;font-size: 18px;line-height: 1.3856;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+    .mauticform-button-wrapper .mauticform-button.btn-default[disabled] { background-color: #ffffff; border-color: #dddddd;}
+</style>
+
+<div id="mauticform_wrapper_submissionform" class="mauticform_wrapper">
+    <form autocomplete="false" role="form" method="post" action="https://mautic.berlinexchange.de/form/submit?formId=3" id="mauticform_submissionform" data-mautic-form="submissionform" enctype="multipart/form-data">
+        <div class="mauticform-error" id="mauticform_submissionform_error"></div>
+        <div class="mauticform-message" id="mauticform_submissionform_message"></div>
+        <div class="mauticform-innerform">
+
+            
+          <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
+
+            <div id="mauticform_submissionform_vorname" data-validate="vorname" data-validation-type="text" class="mauticform-row mauticform-text mauticform-field-1 mauticform-required">
+                <label id="mauticform_label_submissionform_vorname" for="mauticform_input_submissionform_vorname" class="mauticform-label">Vorname - First Name</label>
+                <input id="mauticform_input_submissionform_vorname" name="mauticform[vorname]" value="" placeholder="Vorname" class="mauticform-input" type="text">
+                <span class="mauticform-errormsg" style="display: none;">Anonyme Submissions sind nicht möglich</span>
+            </div>
+
+            <div id="mauticform_submissionform_nachname" data-validate="nachname" data-validation-type="text" class="mauticform-row mauticform-text mauticform-field-2 mauticform-required">
+                <label id="mauticform_label_submissionform_nachname" for="mauticform_input_submissionform_nachname" class="mauticform-label">Nachname - Last Name</label>
+                <input id="mauticform_input_submissionform_nachname" name="mauticform[nachname]" value="" placeholder="Nachname" class="mauticform-input" type="text">
+                <span class="mauticform-errormsg" style="display: none;">Anonyme Submissions sind nicht möglich</span>
+            </div>
+
+            <div id="mauticform_submissionform_universitatinstitution__u" class="mauticform-row mauticform-text mauticform-field-3">
+                <label id="mauticform_label_submissionform_universitatinstitution__u" for="mauticform_input_submissionform_universitatinstitution__u" class="mauticform-label">Universität/Institution - University/Institution</label>
+                <span class="mauticform-helpmessage">An welcher Universität oder Institution wurde die Arbeit geschrieben ?</span>
+                <input id="mauticform_input_submissionform_universitatinstitution__u" name="mauticform[universitatinstitution__u]" value="" placeholder="Universität/Institution" class="mauticform-input" type="text">
+                <span class="mauticform-errormsg" style="display: none;"></span>
+            </div>
+
+            <div id="mauticform_submissionform_fachrichtung" data-validate="fachrichtung" data-validation-type="text" class="mauticform-row mauticform-text mauticform-field-4 mauticform-required">
+                <label id="mauticform_label_submissionform_fachrichtung" for="mauticform_input_submissionform_fachrichtung" class="mauticform-label">Fachrichtung</label>
+                <span class="mauticform-helpmessage">Präzise Angabe der Fachrichtung deiner Arbeit</span>
+                <input id="mauticform_input_submissionform_fachrichtung" name="mauticform[fachrichtung]" value="" placeholder="Fachrichtung" class="mauticform-input" type="text">
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+            </div>
+
+            <div id="mauticform_submissionform_artikeltyp1" data-validate="artikeltyp1" data-validation-type="radiogrp" class="mauticform-row mauticform-radiogrp mauticform-field-5 mauticform-required">
+                <label class="mauticform-label" for="mauticform_radiogrp_radio_artikeltyp1_GrundlagenwissenschaftTranslational1">Artikeltyp</label>
+                <span class="mauticform-helpmessage">Bitte wähle die Kategorie aus, die am besten zu deinem Artikel passt</span>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[artikeltyp1]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_artikeltyp1_10" type="radio" value="1">
+                    <label id="mauticform_radiogrp_label_artikeltyp1_10" for="mauticform_radiogrp_radio_artikeltyp1_10" class="mauticform-radiogrp-label">Grundlagenwissenschaft - Translational</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[artikeltyp1]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_artikeltyp1_21" type="radio" value="2">
+                    <label id="mauticform_radiogrp_label_artikeltyp1_21" for="mauticform_radiogrp_radio_artikeltyp1_21" class="mauticform-radiogrp-label">Klinisch-statistische Arbeit</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[artikeltyp1]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_artikeltyp1_32" type="radio" value="3">
+                    <label id="mauticform_radiogrp_label_artikeltyp1_32" for="mauticform_radiogrp_radio_artikeltyp1_32" class="mauticform-radiogrp-label">Fallbericht</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[artikeltyp1]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_artikeltyp1_43" type="radio" value="4">
+                    <label id="mauticform_radiogrp_label_artikeltyp1_43" for="mauticform_radiogrp_radio_artikeltyp1_43" class="mauticform-radiogrp-label">Systematische Übersichtsarbeit</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[artikeltyp1]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_artikeltyp1_54" type="radio" value="5">
+                    <label id="mauticform_radiogrp_label_artikeltyp1_54" for="mauticform_radiogrp_radio_artikeltyp1_54" class="mauticform-radiogrp-label">Meinungsartikel</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[artikeltyp1]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_artikeltyp1_65" type="radio" value="6">
+                    <label id="mauticform_radiogrp_label_artikeltyp1_65" for="mauticform_radiogrp_radio_artikeltyp1_65" class="mauticform-radiogrp-label">Erfahrungsbericht</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[artikeltyp1]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_artikeltyp1_76" type="radio" value="7">
+                    <label id="mauticform_radiogrp_label_artikeltyp1_76" for="mauticform_radiogrp_radio_artikeltyp1_76" class="mauticform-radiogrp-label">Sonstige</label>
+                </div>
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+            </div>
+
+            <div id="mauticform_submissionform_cover_letter" data-validate="cover_letter" data-validation-type="file" class="mauticform-row mauticform-file mauticform-field-6 mauticform-required">
+                <label id="mauticform_label_submissionform_cover_letter" for="mauticform_input_submissionform_cover_letter" class="mauticform-label">Cover Letter</label>
+                <span class="mauticform-helpmessage">Bitte hier dein Cover Letter hochladen - Please upload your Cover Letter here</span>
+                <input id="mauticform_input_submissionform_cover_letter" name="mauticform[cover_letter]" value="" class="mauticform-input" type="file">
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+            </div>
+
+            <div id="mauticform_submissionform_datenschutzerklarung" data-validate="datenschutzerklarung" data-validation-type="file" class="mauticform-row mauticform-file mauticform-field-7 mauticform-required">
+                <label id="mauticform_label_submissionform_datenschutzerklarung" for="mauticform_input_submissionform_datenschutzerklarung" class="mauticform-label">Datenschutzerklärung</label>
+                <span class="mauticform-helpmessage">Bitte lade hier die ausgefüllte Datenschutzerklärung hoch</span>
+                <input id="mauticform_input_submissionform_datenschutzerklarung" name="mauticform[datenschutzerklarung]" value="" class="mauticform-input" type="file">
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+            </div>
+
+            <div id="mauticform_submissionform_erklarung_zu_interessensk" data-validate="erklarung_zu_interessensk" data-validation-type="file" class="mauticform-row mauticform-file mauticform-field-8 mauticform-required">
+                <label id="mauticform_label_submissionform_erklarung_zu_interessensk" for="mauticform_input_submissionform_erklarung_zu_interessensk" class="mauticform-label">Erklärung zu Interessenskonflikten</label>
+                <span class="mauticform-helpmessage">Bitte lade hier die ausgefüllte Erklärung zu Interessenskonflikten hoch</span>
+                <input id="mauticform_input_submissionform_erklarung_zu_interessensk" name="mauticform[erklarung_zu_interessensk]" value="" class="mauticform-input" type="file">
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+            </div>
+
+            <div id="mauticform_submissionform_upload_paper" data-validate="upload_paper" data-validation-type="file" class="mauticform-row mauticform-file mauticform-field-9 mauticform-required">
+                <label id="mauticform_label_submissionform_upload_paper" for="mauticform_input_submissionform_upload_paper" class="mauticform-label">Manuskript</label>
+                <span class="mauticform-helpmessage">Bitte lade hier dein Manuskript hoch</span>
+                <input id="mauticform_input_submissionform_upload_paper" name="mauticform[upload_paper]" value="" class="mauticform-input" type="file">
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+            </div>
+
+            <div id="mauticform_submissionform_figures" class="mauticform-row mauticform-file mauticform-field-10">
+                <label id="mauticform_label_submissionform_figures" for="mauticform_input_submissionform_figures" class="mauticform-label">Figures</label>
+                <span class="mauticform-helpmessage">Bitte lade hier alle deine Figures so hoch, dass sie sich klar zuordnen lassen</span>
+                <input id="mauticform_input_submissionform_figures" name="mauticform[figures]" value="" class="mauticform-input" type="file">
+                <span class="mauticform-errormsg" style="display: none;"></span>
+            </div>
+
+            <div id="mauticform_submissionform_weitere_dateien" class="mauticform-row mauticform-file mauticform-field-11">
+                <label id="mauticform_label_submissionform_weitere_dateien" for="mauticform_input_submissionform_weitere_dateien" class="mauticform-label">Weitere Dateien</label>
+                <span class="mauticform-helpmessage">Hier kannst du uns weitere Dateien schicken, z.B. Unterstützungserklärungen von PIs, Ethikanträge, Patientenzustimmungen, ärztliche Validierungen etc.</span>
+                <input id="mauticform_input_submissionform_weitere_dateien" name="mauticform[weitere_dateien]" value="" class="mauticform-input" type="file">
+                <span class="mauticform-errormsg" style="display: none;"></span>
+            </div>
+
+            <div id="mauticform_submissionform_submit" class="mauticform-row mauticform-button-wrapper mauticform-field-12">
+                <button type="submit" name="mauticform[submit]" id="mauticform_input_submissionform_submit" value="" class="mauticform-button btn btn-default">Submit</button>
+            </div>
+            </div>
+        </div>
+
+        <input type="hidden" name="mauticform[formId]" id="mauticform_submissionform_id" value="3">
+        <input type="hidden" name="mauticform[return]" id="mauticform_submissionform_return" value="">
+        <input type="hidden" name="mauticform[formName]" id="mauticform_submissionform_name" value="submissionform">
+
+        </form>
+</div>
+
+</html>
